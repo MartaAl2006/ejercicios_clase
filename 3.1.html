@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function tabla() {
+        var num=parseInt(document.getElementById("numId").value);
+        document.write("<h2> La tabla de multiplicar del número "+num+" es:</h2>");
+        for (let x = 0; x <= 10; x++) {
+        document.write("<p> "+num+"x"+x+"="+num*x+"</p>");
+        }
+    }
+</script>
+<body>
+    Número: <input type="number" Id="numId"><br>
+    <input type="button" value="Ver tabla de multplicar" onclick="tabla()">
+</body>
+</html>

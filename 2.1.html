@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function estado(){
+        var Temperatura = document.getElementById("traId").value;
+        Tra = parseInt(Temperatura);
+        if (Tra<0) {
+            alert('Sólido');
+        } else {
+            if (Tra<100) {
+            alert('Líquido');
+        } else {
+            alert('Gaseoso');
+        }
+            
+        }
+
+         
+    }
+</script>
+<body>
+    Temperatura:<input type="number" id="traId"><br>
+    <input type="button" value="Ver estado" onclick="estado()">
+    
+
+</body>
+</html>

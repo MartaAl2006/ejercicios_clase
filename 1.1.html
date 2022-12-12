@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function seg() {
+        var horas = document.getElementById("horasId").value;
+        var minutos = document.getElementById("minutosId").value;
+        var segundos = document.getElementById("segundosId").value;
+        var hor = parseInt(horas);
+        var min = parseInt(minutos);
+        var seg = parseInt(segundos);
+        var res = (3600*hor+60*min+seg);
+        alert('Han transcurrido '+res+' segundos');
+    }
+</script>
+<body>
+    Horas:<input type="number" id="horasId"><br>
+    Minutos:<input type="number" id="minutosId"><br>
+    Segundos:<input type="number" id="segundosId"><br>
+    <input type="button" value="Segundos transcurridos" onclick="seg()">
+</body>
+</html>
